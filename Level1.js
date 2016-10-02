@@ -71,7 +71,7 @@ Game.Level1.prototype = {
     },
     update:function(){
 
-        if(enemies != undefined) {
+        if(enemies != undefined && enemy != undefined) {
 
         g1.physics.arcade.overlap(enemyBullets, tank, bulletHitPlayer, null, this);
 
