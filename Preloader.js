@@ -1,5 +1,5 @@
 var g1;
-var scaleRatio = window.devicePixelRatio / 3;;
+
 
 Game.Preloader = function(game){
     this.preloadBar = null;

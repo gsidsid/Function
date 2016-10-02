@@ -223,7 +223,7 @@ function loadWorld () {
         enemies.push(new EnemyTank(i, game, tank, enemyBullets));
     }
 
-        tank.scale.setTo(scaleRatio, scaleRatio);
+        //tank.scale.setTo(scaleRatio, scaleRatio);
         enemy.scale.setTo(scaleRatio, scaleRatio);
         logo.scale.setTo(scaleRatio, scaleRatio);
         bullet.scale.setTo(scaleRatio, scaleRatio);
