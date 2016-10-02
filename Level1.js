@@ -139,6 +139,15 @@ Game.Level1.prototype = {
     },
     render:function(){
         g1.debug.cameraInfo(g1.camera, 32, 32);
+        tank.scale.setTo(scaleRatio, scaleRatio);
+        enemy.scale.setTo(scaleRatio, scaleRatio);
+        logo.scale.setTo(scaleRatio, scaleRatio);
+        bullet.scale.setTo(scaleRatio, scaleRatio);
+        turret.scale.setTo(scaleRatio, scaleRatio);
+        enterworld.scale.setTo(scaleRatio, scaleRatio);
+        modtank.scale.setTo(scaleRatio, scaleRatio);
+        muzzle.scale.setTo(scaleRatio, scaleRatio);
+        bg.scale.setTo(scaleRatio, scaleRatio);
     },
 
 }
@@ -219,15 +228,7 @@ function loadWorld () {
         enemies.push(new EnemyTank(i, game, tank, enemyBullets));
     }
 
-    tank.scale.setTo(scaleRatio, scaleRatio);
-        enemy.scale.setTo(scaleRatio, scaleRatio);
-        logo.scale.setTo(scaleRatio, scaleRatio);
-        bullet.scale.setTo(scaleRatio, scaleRatio);
-        turret.scale.setTo(scaleRatio, scaleRatio);
-        enterworld.scale.setTo(scaleRatio, scaleRatio);
-        modtank.scale.setTo(scaleRatio, scaleRatio);
-        muzzle.scale.setTo(scaleRatio, scaleRatio);
-        bg.scale.setTo(scaleRatio, scaleRatio);
+
 }
 
 function fire () {
