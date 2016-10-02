@@ -29,7 +29,9 @@ Game.Preloader.prototype = {
         g1.load.image('modtank', 'assets/modtank.png');
         g1.load.image('muzzle', 'assets/muzzle.png');
         g1.load.image('bg', 'assets/debug-grid-1920x1920.png');
-
+        g1.load.image('compass', 'assets/images/compass_rose.png');
+        g1.load.image('touch_segment', 'assets/images/touch_segment.png');
+        g1.load.image('touch', 'assets/images/touch.png');
 
 
 

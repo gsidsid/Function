@@ -91,6 +91,9 @@ Game.Level1.prototype = {
 
 
         }
+
+
+
         if (cursors != undefined) {
 
 
@@ -224,13 +227,16 @@ function loadWorld () {
     }
 
         //tank.scale.setTo(scaleRatio, scaleRatio);
-        enemy.scale.setTo(scaleRatio, scaleRatio);
+        //enemy.scale.setTo(scaleRatio, scaleRatio);
         logo.scale.setTo(scaleRatio, scaleRatio);
         bullet.scale.setTo(scaleRatio, scaleRatio);
         turret.scale.setTo(scaleRatio, scaleRatio);
         enterworld.scale.setTo(scaleRatio, scaleRatio);
         modtank.scale.setTo(scaleRatio, scaleRatio);
         muzzle.scale.setTo(scaleRatio, scaleRatio);
+
+        this.game.touchControl = this.game.plugins.add(Phaser.Plugin.TouchControl);
+        this.game.touchControl.inputEnable();
 }
 
 function fire () {
