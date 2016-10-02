@@ -32,6 +32,7 @@ var fl;
 var ammo = 50;
 var ammoleft = 50;
 var bcounter = "Ammo: " + ammo;
+var scaleRatio = window.devicePixelRatio / 3;
 
 Game.Level1 = function(game){
     this.game = game;
