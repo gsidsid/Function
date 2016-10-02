@@ -30,15 +30,7 @@ Game.Preloader.prototype = {
         g1.load.image('muzzle', 'assets/muzzle.png');
         g1.load.image('bg', 'assets/debug-grid-1920x1920.png');
 
-        tank.scale.setTo(scaleRatio, scaleRatio);
-        enemy.scale.setTo(scaleRatio, scaleRatio);
-        logo.scale.setTo(scaleRatio, scaleRatio);
-        bullet.scale.setTo(scaleRatio, scaleRatio);
-        turret.scale.setTo(scaleRatio, scaleRatio);
-        enterworld.scale.setTo(scaleRatio, scaleRatio);
-        modtank.scale.setTo(scaleRatio, scaleRatio);
-        muzzle.scale.setTo(scaleRatio, scaleRatio);
-        bg.scale.setTo(scaleRatio, scaleRatio);
+
 
 
     },
