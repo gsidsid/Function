@@ -7,6 +7,7 @@ Game.Boot = function(game){
 Game.Boot.prototype = {
     init:function(){
         this.input.maxPointers = 2;
+
         this.stage.disableVisibilityChange = true;
     },
     preload:function(){

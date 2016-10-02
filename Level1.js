@@ -60,6 +60,7 @@ Game.Level1.prototype = {
 
 
 
+
         logo = g1.add.sprite(100,300,'logo');
         tanko = g1.add.sprite(1000,300,'tank');
         //var playbutton = g1.add.sprite(100, 500, 'enterworld');
@@ -70,6 +71,11 @@ Game.Level1.prototype = {
 
     },
     update:function(){
+
+        if(g1.touchControl != undefined) {
+            var speed = g1.touchControl.speed;
+            console.log(speed);
+        }
 
         if(enemies != undefined) {
 
@@ -235,8 +241,9 @@ function loadWorld () {
         modtank.scale.setTo(scaleRatio, scaleRatio);
         muzzle.scale.setTo(scaleRatio, scaleRatio);
 
-        this.game.touchControl = this.game.plugins.add(Phaser.Plugin.TouchControl);
-        this.game.touchControl.inputEnable();
+    g1.touchControl = g1.plugins.add(Phaser.Plugin.TouchControl);
+    g1.game.touchControl.inputEnable();
+
 }
 
 function fire () {

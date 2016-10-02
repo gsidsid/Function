@@ -17,6 +17,9 @@ Game.Preloader.prototype = {
         Phaser.ScaleManager.SHOW_ALL = 0;
         this.game.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
+
+
+
         this.scale.refresh();
         //ASSETS
 
