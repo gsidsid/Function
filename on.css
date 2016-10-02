@@ -1,0 +1,13 @@
+@font-face {
+ font-family: 'fontName';
+ src: url('assets/Minecrafter.Reg.ttf') format('truetype');
+}
+
+body {
+ font-family: 'Minecrafter';
+}
+
+.fontLoader {
+ position: absolute;
+ left: -1000px;
+}
