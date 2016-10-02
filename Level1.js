@@ -71,7 +71,7 @@ Game.Level1.prototype = {
     },
     update:function(){
 
-        if(enemies != undefined && enemy != undefined) {
+        if(enemies != undefined) {
 
         g1.physics.arcade.overlap(enemyBullets, tank, bulletHitPlayer, null, this);
 
@@ -89,15 +89,7 @@ Game.Level1.prototype = {
         }
 
 
-            tank.scale.setTo(scaleRatio, scaleRatio);
-        enemy.scale.setTo(scaleRatio, scaleRatio);
-        logo.scale.setTo(scaleRatio, scaleRatio);
-        bullet.scale.setTo(scaleRatio, scaleRatio);
-        turret.scale.setTo(scaleRatio, scaleRatio);
-        enterworld.scale.setTo(scaleRatio, scaleRatio);
-        modtank.scale.setTo(scaleRatio, scaleRatio);
-        muzzle.scale.setTo(scaleRatio, scaleRatio);
-        bg.scale.setTo(scaleRatio, scaleRatio);
+
         }
         if (cursors != undefined) {
 
@@ -231,7 +223,14 @@ function loadWorld () {
         enemies.push(new EnemyTank(i, game, tank, enemyBullets));
     }
 
-
+        tank.scale.setTo(scaleRatio, scaleRatio);
+        enemy.scale.setTo(scaleRatio, scaleRatio);
+        logo.scale.setTo(scaleRatio, scaleRatio);
+        bullet.scale.setTo(scaleRatio, scaleRatio);
+        turret.scale.setTo(scaleRatio, scaleRatio);
+        enterworld.scale.setTo(scaleRatio, scaleRatio);
+        modtank.scale.setTo(scaleRatio, scaleRatio);
+        muzzle.scale.setTo(scaleRatio, scaleRatio);
 }
 
 function fire () {
