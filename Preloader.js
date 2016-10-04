@@ -43,7 +43,24 @@ Game.Preloader.prototype = {
 
 
     create:function(){
-        this.state.start('Level1');
+        Phaser.ScaleManager.SHOW_ALL = 0;
+        this.game.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+        this.scale.refresh();
+
+        this.stage.backgroundColor = '#3A5963';
+
+
+
+
+        //logo = g1.add.sprite(100,300,'logo');
+        //tanko = g1.add.sprite(1000,300,'tank');
+        //var playbutton = g1.add.sprite(100, 500, 'enterworld');
+        //button = g1.add.button(100, 500, 'enterworld', loadWorld, this, 2, 1, 0);
+        //modify = g1.add.sprite(90, 660, 'modtank');
+
+        g1.world.setBounds(0, 0, 1920, 1920);
+
     }
 
 };
