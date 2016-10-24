@@ -1,0 +1,7 @@
+Speed:10
+Hull Traverse:10
+Turret Traverse:10
+Fire Rate:10
+Damage:10
+Shell Velocity:10
+HP:10
