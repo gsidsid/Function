@@ -1,4 +1,4 @@
-Speed:15
+Speed:12
 Hull Traverse:5
 Turret Traverse:20
 Fire Rate:10
